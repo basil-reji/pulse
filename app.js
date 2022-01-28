@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const { engine } = require('express-handlebars');
+var db = require('./config/db_connection')
 var session = require('express-session')
 
 var indexRouter = require('./routes/index');
@@ -23,8 +24,18 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({secret:'key', cookie:{maxAge:600000}}))
+
+db.connect((err)=>{
+  if(err){
+    console.log(err)
+  }else{
+    console.log('Data Base Connected...')
+  }
+})
+
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/dashboard', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
