@@ -1309,6 +1309,7 @@ section {
   position: absolute;
   left: 2.5rem;
   top: 2rem;
+  z-index: 5;
 }
 
 #back a {

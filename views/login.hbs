@@ -1,3 +1,14 @@
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+      <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+
+
 <div id="back">
   <a href="/"><i class="bx bx-arrow-back"></i><span>Back</span></a>
 </div>
@@ -8,71 +19,73 @@
     background-position: center;
     background-size: cover;">
       <div class="overlay"></div>
-
-
-      
-
-<section class="user" id="log_signup">
-  <div class="user_options-container">
-    <div class="user_options-text">
-      <div class="user_options-unregistered">
-        <h2 class="user_unregistered-title">Don't have an account?</h2>
-        <p class="user_unregistered-text">Please Signup</p>
-        <button class="user_unregistered-signup" id="signup-button">Sign up</button>
-      </div>
-
-      <div class="user_options-registered">
-        <h2 class="user_registered-title">Have an account?</h2>
-        <p class="user_registered-text">Please Login</p>
-        <button class="user_registered-login" id="login-button">Login</button>
-      </div>
-    </div>
-    
-    <div class="user_options-forms" id="user_options-forms">
-      <div class="user_forms-login">
-        <h2 class="forms_title">Login</h2>
-        <form class="forms_form" action="login" method="post">
-          <fieldset class="forms_fieldset">
-            <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+      <section class="user" id="log_signup">
+        <div class="user_options-container">
+          <div class="user_options-text">
+            <div class="user_options-unregistered">
+              <h2 class="user_unregistered-title">Don't have an account?</h2>
+              <p class="user_unregistered-text">Please Signup</p>
+              <button class="user_unregistered-signup" id="signup-button">Sign up</button>
             </div>
-            <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
+
+            <div class="user_options-registered">
+              <h2 class="user_registered-title">Have an account?</h2>
+              <p class="user_registered-text">Please Login</p>
+              <button class="user_registered-login" id="login-button">Login</button>
             </div>
-          </fieldset>
-          <div class="forms_buttons">
-            <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-            <a href="/dashboard" class="forms_buttons-action"> Login</a>
-            <!--
-            <button type="submit" class="forms_buttons-action"> Login</button>
-            -->
           </div>
-        </form>
-      </div>
-      <div class="user_forms-signup">
-        <h2 class="forms_title">Sign Up</h2>
-        <form class="forms_form" action="signup" method="post">
-          <fieldset class="forms_fieldset">
-            <div class="forms_field">
-              <input type="text" placeholder="Full Name" class="forms_field-input" required />
+          
+          <div class="user_options-forms" id="user_options-forms">
+            <div class="user_forms-login">
+              <h2 class="forms_title">Login</h2>
+              <form class="forms_form" action="login" method="post">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Password" class="forms_field-input" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <button type="button" class="forms_buttons-forgot">Forgot password?</button>
+                  <a href="/dashboard" class="forms_buttons-action"> Login</a>
+                  <!--
+                  <button type="submit" class="forms_buttons-action"> Login</button>
+                  -->
+                </div>
+              </form>
             </div>
-            <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required />
+            <div class="user_forms-signup">
+              <h2 class="forms_title">Sign Up</h2>
+              <form class="forms_form" action="signup" method="post">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="text" placeholder="Full Name" class="forms_field-input" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Password" class="forms_field-input" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <input type="submit" value="Sign up" class="forms_buttons-action">
+                </div>
+              </form>
             </div>
-            <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
-            </div>
-          </fieldset>
-          <div class="forms_buttons">
-            <input type="submit" value="Sign up" class="forms_buttons-action">
           </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+        </div>
+      </section>
     </div>
   </div>
 </main>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="javascripts/main.js"></script>

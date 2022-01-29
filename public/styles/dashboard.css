@@ -104,6 +104,7 @@ a:focus {
 
 .site-wrapper {
   border-top: 4px solid #00cc81;
+  z-index: 1;
 }
 
 #back {
@@ -592,4 +593,160 @@ a:focus {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
   }
+}
+
+#field-test {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+#field-test .disp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+#field-test .disp .display-card {
+  margin: 2.7rem;
+  width: 13rem;
+  height: auto;
+  border: 1px solid #00ffa2;
+  border-radius: 0.5rem;
+}
+
+#field-test .disp .display-card .disp-reading {
+  width: 100%;
+  text-align: center;
+  color: #00ffa2;
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+  padding: 0.5rem;
+}
+
+#field-test .disp .display-card .btn-success {
+  background-color: #00ffa2;
+  color: #272727;
+}
+
+#field-test .disp .display-card .data-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+  margin-top: 0;
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+  /* The slider */
+}
+
+#field-test .disp .display-card .data-show .sens-status {
+  position: relative;
+  top: -1rem;
+  width: 90%;
+  background-color: #00ffa2;
+  border-radius: 0.1rem;
+  color: #272727;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+#field-test .disp .display-card .data-show .data-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#field-test .disp .display-card .data-show .data-controls .mybtn {
+  margin: 1rem;
+}
+
+#field-test .disp .display-card .data-show .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#field-test .disp .display-card .data-show .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#field-test .disp .display-card .data-show .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f74949;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#field-test .disp .display-card .data-show .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #272727;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#field-test .disp .display-card .data-show input:checked + .slider {
+  background-color: #00ffa2;
+}
+
+#field-test .disp .display-card .data-show input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
+}
+
+#field-test .disp .display-card .data-show input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#field-test h2 {
+  color: #00ffa2;
+}
+
+#field-test h2::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #00ffa2;
+  width: 50%;
+  margin-left: 15px;
+  top: 50%;
 }

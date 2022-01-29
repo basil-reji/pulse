@@ -117,6 +117,7 @@ a:focus {
 }
 .site-wrapper {
     border-top: 4px solid $color5;
+    z-index: 1;
 }
 
 #back{
@@ -143,4 +144,5 @@ a:focus {
     }
 }
 
-@import './scss/chatbot'
+@import './scss/chatbot';
+@import './scss/test'
