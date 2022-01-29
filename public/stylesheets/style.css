@@ -22,6 +22,21 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+html::-webkit-scrollbar-track {
+  -webkit-box-align: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar {
+  width: 2px;
+  background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -448,7 +463,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("/images/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -773,8 +788,8 @@ section {
   # Cta
   --------------------------------------------------------------*/
 .cta {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/cta-bg.jpg") fixed center center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/cta-bg.jpg") fixed center center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/images/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -1290,6 +1305,123 @@ section {
   color: #009961;
 }
 
+#back {
+  position: absolute;
+  left: 2.5rem;
+  top: 2rem;
+}
+
+#back a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#back a:hover {
+  color: white;
+}
+
+#back span {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+#logto {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: #0c0f15;
+  overflow-x: hidden;
+  color: #ffffff;
+  /*
+       *  CSS Helper Class
+       */
+  /*------------------------------------------------
+          Start Styling
+      -------------------------------------------------*/
+}
+
+#logto .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 15, 21, 0.85);
+}
+
+#logto ::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+#logto ::-webkit-scrollbar-thumb {
+  background-color: #009961;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+}
+
+#logto ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+#logto .heading-page {
+  text-transform: uppercase;
+  font-size: 43px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: white;
+}
+
+#logto .clear:before,
+#logto .clear:after {
+  content: " ";
+  display: table;
+}
+
+#logto .clear:after {
+  clear: both;
+}
+
+#logto .pt-table {
+  display: table;
+  width: 100%;
+  height: calc(100vh - 4px);
+}
+
+#logto .pt-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#logto .relative {
+  position: relative;
+}
+
+#logto .primary,
+#logto .link:hover {
+  color: #009961;
+}
+
+#logto .mt20 {
+  margin-top: 20px;
+}
+
+#logto .site-wrapper {
+  border-top: 4px solid #00cc81;
+}
+
 #log_signup {
   height: 100vh;
   width: 100%;
@@ -1488,6 +1620,12 @@ section {
   width: 100%;
   background-color: #444444;
   border-radius: 3px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 #log_signup .user_options-registered,
@@ -1514,7 +1652,7 @@ section {
 #log_signup .user_registered-login,
 #log_signup .user_unregistered-signup {
   margin-top: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   border-radius: 3px;
   padding: 10px 30px;
   color: #fff;
@@ -1528,7 +1666,7 @@ section {
 #log_signup .user_registered-login:hover,
 #log_signup .user_unregistered-signup:hover {
   color: #444444;
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 #log_signup .user_options-forms {
@@ -1576,14 +1714,14 @@ section {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  color: gray;
+  color: #444444;
   letter-spacing: 0.1rem;
   -webkit-transition: border-color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out;
 }
 
 #log_signup .user_options-forms .forms_field-input:focus {
-  border-color: gray;
+  border-color: #444444;
 }
 
 #log_signup .user_options-forms .forms_buttons {
@@ -1609,7 +1747,7 @@ section {
 }
 
 #log_signup .user_options-forms .forms_buttons-forgot:hover {
-  color: #b3b3b3;
+  color: #009961;
 }
 
 #log_signup .user_options-forms .forms_buttons-action {
