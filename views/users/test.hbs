@@ -18,49 +18,49 @@
           <div class="disp row">
             <div class="display-card">
                 <div class="disp-reading">
-                  <h5>Data </h5>
+                  <h5>pH </h5>
                 </div>
                 <div class="data-show">
-                    <div class="sens-status"><span id="">Reading</span> %</div>
+                    <div class="sens-status"><span id="text1">...</span></div>
                     <div class="lin"></div>
                     <div class="data-controls">
                       <label class="switch mybtn">
-                      <input type="checkbox">
+                      <input type="checkbox" id="checkbox1" onclick="checkBoxFun(1)">
                       <span class="slider"></span>
                       </label>
-                      <button class="btn btn-success mybtn">Pick</button>
+                      <button class="btn btn-success mybtn" id="pick1">Pick</button>
                     </div>
                 </div>
             </div>
             <div class="display-card">
                 <div class="disp-reading">
-                  <h5>Data </h5>
+                  <h5>Soil Moisture</h5>
                 </div>
                 <div class="data-show">
-                    <div class="sens-status"><span id="">Reading</span> %</div>
+                    <div class="sens-status"><span id="text2">...</span> %</div>
                     <div class="lin"></div>
                     <div class="data-controls">
                       <label class="switch mybtn">
-                      <input type="checkbox">
+                      <input type="checkbox" id="checkbox2" onclick="checkBoxFun(2)">
                       <span class="slider"></span>
                       </label>
-                      <button class="btn btn-success mybtn">Pick</button>
+                      <button class="btn btn-success mybtn" id="pick2">Pick</button>
                     </div>
                 </div>
             </div>
             <div class="display-card">
                 <div class="disp-reading">
-                  <h5>Data </h5>
+                  <h5>Condutivity</h5>
                 </div>
                 <div class="data-show">
-                    <div class="sens-status"><span id="">Reading</span> %</div>
+                    <div class="sens-status"><span id="text3">...</span> %</div>
                     <div class="lin"></div>
                     <div class="data-controls">
                       <label class="switch mybtn">
-                      <input type="checkbox">
+                      <input type="checkbox" id="checkbox3" onclick="checkBoxFun(3)">
                       <span class="slider"></span>
                       </label>
-                      <button class="btn btn-success mybtn">Pick</button>
+                      <button class="btn btn-success mybtn" id="pick3">Pick</button>
                     </div>
                 </div>
             </div>
@@ -68,37 +68,39 @@
           <div class="disp row">
             <div class="display-card">
                 <div class="disp-reading">
-                  <h5>Data </h5>
+                  <h5>Humidity</h5>
                 </div>
                 <div class="data-show">
-                    <div class="sens-status"><span id="">Reading</span> %</div>
+                    <div class="sens-status"><span id="text4">...</span> %</div>
                     <div class="lin"></div>
                     <div class="data-controls">
                       <label class="switch mybtn">
-                      <input type="checkbox">
+                      <input type="checkbox" id="checkbox4" onclick="checkBoxFun(4)">
                       <span class="slider"></span>
                       </label>
-                      <button class="btn btn-success mybtn">Pick</button>
+                      <button class="btn btn-success mybtn" id="pick4">Pick</button>
                     </div>
                 </div>
             </div>
             <div class="display-card">
                 <div class="disp-reading">
-                  <h5>Data </h5>
+                  <h5>Temperature</h5>
                 </div>
                 <div class="data-show">
-                    <div class="sens-status"><span id="">Reading</span> %</div>
+                    <div class="sens-status"><span id="text5">...</span> C</div>
                     <div class="lin"></div>
                     <div class="data-controls">
                       <label class="switch mybtn">
-                      <input type="checkbox">
+                      <input type="checkbox" id="checkbox5" onclick="checkBoxFun(5)">
                       <span class="slider"></span>
                       </label>
-                      <button class="btn btn-success mybtn">Pick</button>
+                      <button class="btn btn-success mybtn" id="pick5">Pick</button>
                     </div>
                 </div>
             </div>
           </div>
+          <button class="btn btn-success mybtn" style="margin: 1rem;">Save</button>
+          <button class="btn btn-success mybtn" style="margin: 1rem;">Get suggestions</button>
         </div>
       </section>
     </div>
@@ -106,3 +108,4 @@
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></script>
+<script src="/javascripts/test.js"></script>

@@ -31,6 +31,9 @@ router.get('/chatbot', function(req, res, next) {
 router.get('/analytics', function(req, res, next) {
   res.render('users/charts', {nav:false, footer:false,});
 });
+router.get('/contact', function(req, res, next) {
+  res.render('users/contact', {nav:false, footer:false,});
+});
 
 router.post('/dashboard/api/messageBot', function(req, res, next) {
   console.log(req.body.data)
