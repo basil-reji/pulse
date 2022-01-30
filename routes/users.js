@@ -31,8 +31,13 @@ router.get('/chatbot', function(req, res, next) {
 router.get('/analytics', function(req, res, next) {
   res.render('users/charts', {nav:false, footer:false,});
 });
+
 router.get('/contact', function(req, res, next) {
   res.render('users/contact', {nav:false, footer:false,});
+});
+
+router.get('/values', function(req, res, next) {
+  res.render('test/vals', {nav:false, footer:false,});
 });
 
 router.post('/dashboard/api/messageBot', function(req, res, next) {
@@ -45,6 +50,10 @@ router.post('/dashboard/api/messageBot', function(req, res, next) {
 
 router.get('/ai-camera', function(req, res, next) {
   res.render('users/detection', {nav:false, footer:false});
+});
+
+router.get('/getsuggestion', function(req, res, next) {
+  res.render('users/sgt', {nav:false, footer:false});
 });
 
 module.exports = router;

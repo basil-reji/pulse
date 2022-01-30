@@ -21,86 +21,66 @@
                   <h5>pH </h5>
                 </div>
                 <div class="data-show">
-                    <div class="sens-status"><span id="text1">---</span></div>
+                    <div class="sens-status"><span id="text1">...</span></div>
                     <div class="lin"></div>
                     <div class="data-controls">
-                      <label class="switch mybtn">
-                      <input type="checkbox" id="checkbox1" onclick="checkBoxFun(1)">
-                      <span class="slider"></span>
-                      </label>
-                      <button class="btn btn-success mybtn" id="pick1">Pick</button>
+                        <input type="text" name="Price" class="form-control" id="inp1">  
+                        <button class="btn btn-success mybtn" id="btn1" onclick="buttonclick(1)">Send</button>
                     </div>
                 </div>
             </div>
             <div class="display-card">
                 <div class="disp-reading">
-                  <h5>Soil Moisture</h5>
+                  <h5>Soil Moisture </h5>
                 </div>
                 <div class="data-show">
-                    <div class="sens-status"><span id="text2">---</span> %</div>
+                    <div class="sens-status"><span id="text2">...</span></div>
                     <div class="lin"></div>
                     <div class="data-controls">
-                      <label class="switch mybtn">
-                      <input type="checkbox" id="checkbox2" onclick="checkBoxFun(2)">
-                      <span class="slider"></span>
-                      </label>
-                      <button class="btn btn-success mybtn" id="pick2">Pick</button>
+                        <input type="text" name="Price" class="form-control" id="inp2">  
+                        <button class="btn btn-success mybtn" id="btn2" onclick="buttonclick(2)">Send</button>
                     </div>
                 </div>
             </div>
             <div class="display-card">
                 <div class="disp-reading">
-                  <h5>Condutivity</h5>
+                  <h5>Condutivity </h5>
                 </div>
                 <div class="data-show">
-                    <div class="sens-status"><span id="text3">---</span> %</div>
+                    <div class="sens-status"><span id="text3">...</span></div>
                     <div class="lin"></div>
                     <div class="data-controls">
-                      <label class="switch mybtn">
-                      <input type="checkbox" id="checkbox3" onclick="checkBoxFun(3)">
-                      <span class="slider"></span>
-                      </label>
-                      <button class="btn btn-success mybtn" id="pick3">Pick</button>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="disp row">
-            <div class="display-card">
-                <div class="disp-reading">
-                  <h5>Humidity</h5>
-                </div>
-                <div class="data-show">
-                    <div class="sens-status"><span id="text4">---</span> %</div>
-                    <div class="lin"></div>
-                    <div class="data-controls">
-                      <label class="switch mybtn">
-                      <input type="checkbox" id="checkbox4" onclick="checkBoxFun(4)">
-                      <span class="slider"></span>
-                      </label>
-                      <button class="btn btn-success mybtn" id="pick4">Pick</button>
+                        <input type="text" name="Price" class="form-control" id="inp3">  
+                        <button class="btn btn-success mybtn" id="btn3" onclick="buttonclick(3)">Send</button>
                     </div>
                 </div>
             </div>
             <div class="display-card">
                 <div class="disp-reading">
-                  <h5>Temperature</h5>
+                  <h5>Temperature </h5>
                 </div>
                 <div class="data-show">
-                    <div class="sens-status"><span id="text5">---</span> C</div>
+                    <div class="sens-status"><span id="text4">...</span></div>
                     <div class="lin"></div>
                     <div class="data-controls">
-                      <label class="switch mybtn">
-                      <input type="checkbox" id="checkbox5" onclick="checkBoxFun(5)">
-                      <span class="slider"></span>
-                      </label>
-                      <button class="btn btn-success mybtn" id="pick5">Pick</button>
+                        <input type="text" name="Price" class="form-control" id="inp4">  
+                        <button class="btn btn-success mybtn" id="btn4" onclick="buttonclick(4)">Send</button>
                     </div>
                 </div>
             </div>
-          </div>
-          <button class="btn btn-success mybtn" style="margin: 1rem;">Save</button>
-          <a class="btn btn-success mybtn" style="margin: 1rem;" href="/dashboard/getsuggestion">Get suggestions</a>
+            <div class="display-card">
+                <div class="disp-reading">
+                  <h5>Humidity </h5>
+                </div>
+                <div class="data-show">
+                    <div class="sens-status"><span id="text5">...</span></div>
+                    <div class="lin"></div>
+                    <div class="data-controls">
+                        <input type="text" name="Price" class="form-control" id="inp5">  
+                        <button class="btn btn-success mybtn" id="btn5" onclick="buttonclick(5)">Send</button>
+                    </div>
+                </div>
+            </div>
         </div>
       </section>
     </div>
@@ -108,4 +88,4 @@
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></script>
-<script src="/javascripts/test.js"></script>
+<script src="/javascripts/upvalue.js"></script>
